@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página educativa sobre Radia Perlman, pioneira das redes de computadores.">
+    <title>Radia Perlman | Pioneira das Redes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#inicio" class="logo"><span>&lt;/&gt;</span> Radia Perlman</a>
+            <button class="menu-mobile" id="menuMobile" aria-label="Abrir menu">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#stp">STP</a></li>
+                <li><a href="#contribuicoes">Contribuições</a></li>
+                <li><a href="#linha-do-tempo">Linha do tempo</a></li>
+            </ul>
+            <button id="modoBtn" class="modo-btn" aria-label="Alternar modo escuro">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-text">
+                <span class="tag">PIONEIRA DA COMPUTAÇÃO</span>
+                <h1>Radia<br>Perlman</h1>
+                <h2>A mulher por trás de uma das ideias fundamentais das redes modernas.</h2>
+                <p>Engenheira, matemática e pesquisadora, Radia Perlman realizou contribuições importantes para redes de computadores, especialmente no desenvolvimento do algoritmo associado ao Spanning Tree Protocol.</p>
+                <div class="hero-buttons">
+                    <a href="#biografia" class="botao">Conheça sua história</a>
+                    <a href="#stp" class="botao-secundario">Entenda o STP ↓</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <div class="image-decoration"></div>
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Radia%20Perlman%20%282009%29.jpg" alt="Radia Perlman em 2009">
+                <div class="image-caption">Radia Perlman — 2009</div>
+            </div>
+        </section>
+
+        <section class="numeros">
+            <div class="numero"><strong>1951</strong><span>Ano de nascimento</span></div>
+            <div class="numero"><strong>MIT</strong><span>Formação acadêmica</span></div>
+            <div class="numero"><strong>STP</strong><span>Spanning Tree Protocol</span></div>
+            <div class="numero"><strong>1980s</strong><span>Desenvolvimento do algoritmo</span></div>
+        </section>
+
+        <section id="biografia" class="secao">
+            <div class="titulo">
+                <span>01</span>
+                <div><small>SUA HISTÓRIA</small><h2>Quem foi Radia Perlman?</h2></div>
+            </div>
+
+            <div class="biografia-grid">
+                <div class="biografia-imagem">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Radia%20Perlman%20%282009%29.jpg" alt="Retrato de Radia Perlman">
+                    <div class="legenda">Radia Joy Perlman</div>
+                </div>
+
+                <div class="biografia-texto">
+                    <p><strong>Radia Joy Perlman</strong> nasceu em 18 de dezembro de 1951, nos Estados Unidos. Ela se tornou uma importante engenheira, matemática e pesquisadora na área de redes de computadores.</p>
+                    <p>Perlman estudou no <strong>Massachusetts Institute of Technology (MIT)</strong>, onde desenvolveu sua formação em matemática e posteriormente realizou estudos avançados em Ciência da Computação.</p>
+                    <p>Durante sua carreira, trabalhou em problemas relacionados à comunicação entre computadores, protocolos de redes, roteamento e segurança.</p>
+                    <p>Seu trabalho mais conhecido está relacionado ao desenvolvimento do algoritmo que deu origem ao <strong>Spanning Tree Protocol (STP)</strong>, utilizado para evitar loops em redes Ethernet.</p>
+
+                    <div class="destaque-texto">
+                        <span>💡</span>
+                        <p>O trabalho de Perlman ajudou a tornar as redes Ethernet mais escaláveis e confiáveis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stp" class="secao secao-stp">
+            <div class="titulo">
+                <span>02</span>
+                <div><small>REDES DE COMPUTADORES</small><h2>O que é o Spanning Tree Protocol?</h2></div>
+            </div>
+
+            <div class="stp-grid">
+                <div class="stp-texto">
+                    <p>Imagine uma rede com vários switches conectados entre si.</p>
+                    <p>Ter caminhos alternativos é importante, pois uma conexão pode falhar. Porém, se todos os caminhos permanecerem ativos ao mesmo tempo, os dados podem circular continuamente pela rede.</p>
+                    <p>Esse problema é conhecido como <strong>loop de rede</strong>.</p>
+                    <p>O algoritmo desenvolvido por Radia Perlman permitiu criar uma estrutura lógica de caminhos que evita esses loops, mantendo caminhos alternativos disponíveis.</p>
+
+                    <div class="stp-explicacao">
+                        <div class="passo"><span>01</span><div><strong>A rede possui vários caminhos</strong><p>Os switches podem ter mais de uma conexão entre eles.</p></div></div>
+                        <div class="passo"><span>02</span><div><strong>O algoritmo identifica os caminhos</strong><p>A rede organiza sua topologia.</p></div></div>
+                        <div class="passo"><span>03</span><div><strong>Um caminho pode ser bloqueado</strong><p>Isso ajuda a impedir a formação de loops.</p></div></div>
+                    </div>
+                </div>
+
+                <div class="diagrama">
+                    <div class="diagrama-titulo">EXEMPLO DE TOPOLOGIA</div>
+                    <div class="rede">
+                        <div class="node computador">PC 01</div>
+                        <div class="conexao"></div>
+                        <div class="node switch">SWITCH 01</div>
+                        <div class="conexao"></div>
+                        <div class="node switch">SWITCH 02</div>
+                        <div class="conexao"></div>
+                        <div class="node computador">PC 02</div>
+                    </div>
+                    <div class="status-rede"><span class="bolinha"></span><span>Topologia organizada pelo STP</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="titulo">
+                <span>03</span>
+                <div><small>IMPACTO TECNOLÓGICO</small><h2>Por que esse trabalho é importante?</h2></div>
+            </div>
+
+            <div class="cards">
+                <article class="card"><div class="icone">🔄</div><h3>Evita loops</h3><p>Ajuda a evitar que os quadros de uma rede Ethernet fiquem circulando indefinidamente.</p></article>
+                <article class="card"><div class="icone">🌐</div><h3>Escalabilidade</h3><p>Contribuiu para que redes Ethernet pudessem crescer e conectar uma quantidade maior de dispositivos.</p></article>
+                <article class="card"><div class="icone">🛡️</div><h3>Redundância</h3><p>A existência de caminhos alternativos pode ajudar a rede a continuar funcionando diante de determinadas falhas.</p></article>
+                <article class="card"><div class="icone">🔗</div><h3>Conectividade</h3><p>Seu trabalho contribuiu para a evolução das tecnologias utilizadas para conectar computadores.</p></article>
+            </div>
+        </section>
+
+        <section id="contribuicoes" class="secao contribuicoes-secao">
+            <div class="titulo">
+                <span>04</span>
+                <div><small>LEGADO</small><h2>Contribuições para a tecnologia</h2></div>
+            </div>
+
+            <div class="contribuicoes-grid">
+                <article><span class="numero-card">01</span><h3>Spanning Tree Protocol</h3><p>Perlman desenvolveu o algoritmo que se tornou a base do Spanning Tree Protocol, utilizado em redes Ethernet para evitar loops de camada 2.</p></article>
+                <article><span class="numero-card">02</span><h3>Protocolos de roteamento</h3><p>Também contribuiu para o desenvolvimento e estudo de protocolos utilizados na comunicação entre redes.</p></article>
+                <article><span class="numero-card">03</span><h3>Segurança de redes</h3><p>Sua carreira também envolveu pesquisas relacionadas à segurança e aos protocolos de comunicação.</p></article>
+                <article><span class="numero-card">04</span><h3>TRILL</h3><p>Perlman esteve envolvida no desenvolvimento do TRILL, tecnologia criada para utilizar múltiplos caminhos em redes Ethernet.</p></article>
+            </div>
+        </section>
+
+        <section class="impacto">
+            <div class="impacto-conteudo">
+                <span>O LEGADO DE RADIA PERLMAN</span>
+                <h2>Quando você utiliza uma rede, existe muita tecnologia trabalhando nos bastidores.</h2>
+                <p>Computadores, servidores, switches e roteadores precisam trocar informações de forma organizada. Os protocolos de rede são fundamentais para que essa comunicação aconteça.</p>
+            </div>
+        </section>
+
+        <section class="secao">
+            <div class="titulo">
+                <span>05</span>
+                <div><small>PERSONALIDADE</small><h2>Radia Perlman</h2></div>
+            </div>
+
+            <div class="galeria">
+                <div class="galeria-principal">
+                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Radia%20Perlman%20%282009%29.jpg" alt="Radia Perlman">
+                </div>
+                <div class="galeria-info">
+                    <span>ENGENHEIRA • MATEMÁTICA • PESQUISADORA</span>
+                    <h3>Uma trajetória dedicada à computação.</h3>
+                    <p>Radia Perlman tornou-se uma referência na área de redes de computadores e é frequentemente lembrada por suas contribuições ao funcionamento de redes Ethernet.</p>
+                    <p>Seu trabalho demonstra como conceitos matemáticos e algoritmos podem resolver problemas reais da tecnologia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="linha-do-tempo" class="secao timeline-secao">
+            <div class="titulo">
+                <span>06</span>
+                <div><small>TRAJETÓRIA</small><h2>Linha do tempo</h2></div>
+            </div>
+
+            <div class="timeline">
+                <div class="evento"><div class="ano">1951</div><div class="evento-conteudo"><h3>Nascimento</h3><p>Radia Joy Perlman nasce em 18 de dezembro de 1951, nos Estados Unidos.</p></div></div>
+                <div class="evento"><div class="ano">MIT</div><div class="evento-conteudo"><h3>Formação acadêmica</h3><p>Estuda no Massachusetts Institute of Technology, desenvolvendo sua formação em matemática e computação.</p></div></div>
+                <div class="evento"><div class="ano">1980</div><div class="evento-conteudo"><h3>Trabalho com redes</h3><p>Atua profissionalmente em projetos relacionados a redes de computadores.</p></div></div>
+                <div class="evento"><div class="ano">1980s</div><div class="evento-conteudo"><h3>Spanning Tree</h3><p>Desenvolve o algoritmo que se torna a base do Spanning Tree Protocol.</p></div></div>
+                <div class="evento"><div class="ano">1988</div><div class="evento-conteudo"><h3>Doutorado</h3><p>Conclui seu doutorado em Ciência da Computação no MIT.</p></div></div>
+                <div class="evento"><div class="ano">Hoje</div><div class="evento-conteudo"><h3>Legado</h3><p>Continua sendo reconhecida como uma importante pesquisadora e pioneira na área de redes.</p></div></div>
+            </div>
+        </section>
+
+        <section class="curiosidade">
+            <div class="curiosidade-conteudo">
+                <span>💡 VOCÊ SABIA?</span>
+                <h2>Radia Perlman também usou criatividade para explicar conceitos de redes.</h2>
+                <p>Ela escreveu o poema "Algorhyme", uma maneira divertida de explicar a ideia por trás do algoritmo Spanning Tree.</p>
+                <button id="curiosidadeBtn">Mostrar curiosidade</button>
+                <div id="curiosidadeTexto"></div>
+            </div>
+        </section>
+
+        <section class="fontes">
+            <div>
+                <h2>Fontes e referências</h2>
+                <p>As informações desta página devem ser conferidas nas fontes utilizadas como referência histórica e técnica.</p>
+                <ul>
+                    <li>MIT</li>
+                    <li>Internet Hall of Fame</li>
+                    <li>National Inventors Hall of Fame</li>
+                    <li>Wikimedia Commons</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo"><span>&lt;/&gt;</span> Radia Perlman</div>
+        <p>Página educativa sobre história da computação e redes de computadores.</p>
+        <p class="copyright">Projeto desenvolvido com HTML, CSS e JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
